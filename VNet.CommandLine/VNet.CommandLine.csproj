@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <AssemblyVersion>1.0.0.2</AssemblyVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Config.Net" Version="4.17.0" />
+    <PackageReference Include="FluentValidation" Version="10.3.4" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.4" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="6.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VNet.Testing\VNet.Testing\VNet.Testing.csproj" />
+    <ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
+    <ProjectReference Include="..\..\VNet.Validation\VNet.Validation\VNet.Validation.csproj" />
+  </ItemGroup>
+  <Target Name="CopyToSharedLibraries" AfterTargets="AfterBuild">
+    <Copy SourceFiles="$(OutputPath)\VNet.CommandLine.dll" DestinationFolder="D:\My Code\Shared Libraries\" ContinueOnError="true" />
+  </Target>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
+  </Target>
+</Project>
