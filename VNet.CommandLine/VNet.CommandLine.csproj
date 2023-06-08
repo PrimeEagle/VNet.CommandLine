@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <AnalysisLevel>latest</AnalysisLevel>
@@ -8,12 +8,11 @@
     <PackageReference Include="Config.Net" Version="5.1.5" />
     <PackageReference Include="FluentValidation" Version="11.5.2" />
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
-    <PackageReference Include="Microsoft.CodeCoverage" Version="17.6.1" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.6.2" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\VNet.Testing\VNet.Testing\VNet.Testing.csproj" />
     <ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
     <ProjectReference Include="..\..\VNet.Validation\VNet.Validation\VNet.Validation.csproj" />
   </ItemGroup>

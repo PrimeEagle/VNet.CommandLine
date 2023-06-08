@@ -463,5 +463,10 @@ namespace VNet.CommandLine.Test
         {
             return this.Assembly.GetTypes();
         }
+
+        IEnumerable<Type> IAssembly.GetTypes()
+        {
+            return this.Assembly.GetTypes();
+        }
     }
 }
