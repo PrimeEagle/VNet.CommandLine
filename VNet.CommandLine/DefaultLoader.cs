@@ -6,7 +6,6 @@ using VNet.CommandLine.Extensions;
 using VNet.Testing;
 using VNet.Utility.Extensions;
 
-
 namespace VNet.CommandLine
 {
 	public class DefaultLoader : ILoader

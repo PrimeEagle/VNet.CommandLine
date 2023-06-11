@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using VNet.CommandLine.Attributes;
 using VNet.Utility.Extensions;
+
 // ReSharper disable InconsistentNaming
 
 namespace VNet.CommandLine.Extensions

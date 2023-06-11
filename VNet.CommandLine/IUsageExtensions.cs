@@ -5,7 +5,6 @@ using System.Linq;
 using System.Reflection;
 using VNet.CommandLine.Attributes;
 using VNet.Testing;
-using VNet.Utility;
 using VNet.Utility.Extensions;
 
 namespace VNet.CommandLine

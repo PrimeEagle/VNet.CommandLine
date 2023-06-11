@@ -6,6 +6,7 @@ using System.Reflection;
 using VNet.CommandLine.Attributes;
 using VNet.Testing;
 using VNet.Utility.Extensions;
+
 // ReSharper disable UnusedType.Global
 
 namespace VNet.CommandLine.Extensions

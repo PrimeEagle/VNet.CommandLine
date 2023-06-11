@@ -1,13 +1,13 @@
-﻿using FluentValidation;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
+using FluentValidation;
 using VNet.CommandLine.Attributes;
-using VNet.CommandLine.Extensions;
 using VNet.Utility.Extensions;
 using VNet.Validation;
 using VNet.Validation.FluentValidation;
+
 // ReSharper disable RedundantAssignment
 
 namespace VNet.CommandLine.Validation.FluentValidation

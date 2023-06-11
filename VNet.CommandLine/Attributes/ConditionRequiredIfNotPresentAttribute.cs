@@ -1,4 +1,4 @@
-﻿using System.Linq;
+﻿
 // ReSharper disable ParameterTypeCanBeEnumerable.Local
 
 namespace VNet.CommandLine.Attributes

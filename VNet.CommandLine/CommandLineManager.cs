@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using Microsoft.Extensions.Logging;
 using VNet.CommandLine.Validation;
 using VNet.Testing;
 using VNet.Validation;
+
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable BuiltInTypeReferenceStyle
 

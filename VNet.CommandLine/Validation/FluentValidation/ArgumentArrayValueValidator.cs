@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
-using FluentValidation;
 using System.Linq;
+using FluentValidation;
 using VNet.Validation;
 using VNet.Validation.FluentValidation;
 

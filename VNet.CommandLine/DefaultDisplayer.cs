@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Microsoft.Extensions.Logging;
-using VNet.CommandLine.Extensions;
 using VNet.Validation;
+
 // ReSharper disable PossibleMultipleEnumeration
 
 namespace VNet.CommandLine

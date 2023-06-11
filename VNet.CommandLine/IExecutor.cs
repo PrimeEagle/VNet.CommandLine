@@ -1,6 +1,4 @@
-﻿using VNet.CommandLine.Validation;
-
-namespace VNet.CommandLine
+﻿namespace VNet.CommandLine
 {
 	public interface IExecutor
     {
