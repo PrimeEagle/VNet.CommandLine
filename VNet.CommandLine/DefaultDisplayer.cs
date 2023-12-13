@@ -36,7 +36,7 @@ namespace VNet.CommandLine
 
         public void ShowHelp(IEnumerable<TextWriter> streams, ILogger logger, IConfiguration configuration)
         {
-            var processModule = System.Diagnostics.Process.GetCurrentProcess().MainModule;
+            var processModule = global::System.Diagnostics.Process.GetCurrentProcess().MainModule;
             var textWriters = streams?.ToList();
 
             if (processModule != null)

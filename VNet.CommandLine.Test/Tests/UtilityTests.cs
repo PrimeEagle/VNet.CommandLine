@@ -29,7 +29,7 @@ namespace VNet.CommandLine.Test.Tests
         private CommandLineManager _cm;
 
         [ClassInitialize()]
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "Test ClassSetup")]
+        [global::System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0060:Remove unused parameter", Justification = "Test ClassSetup")]
         public static void ClassSetup(TestContext context)
         {
             _services = ConfigTestServices.ConfigureServices();

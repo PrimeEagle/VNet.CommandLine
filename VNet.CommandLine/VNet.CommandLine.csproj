@@ -6,15 +6,15 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Config.Net" Version="5.1.5" />
-    <PackageReference Include="FluentValidation" Version="11.8.0" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
-    <PackageReference Include="Microsoft.CodeCoverage" Version="17.7.2" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="7.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
-    <ProjectReference Include="..\..\VNet.Validation\VNet.Validation\VNet.Validation.csproj" />
+    <PackageReference Include="FluentValidation" Version="11.8.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.1" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.8.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <PackageReference Include="VNet.System" Version="1.0.0" />
+    <PackageReference Include="VNet.Testing" Version="1.0.1" />
+    <PackageReference Include="VNet.Utility" Version="1.0.1" />
+    <PackageReference Include="VNet.Validation" Version="1.0.0" />
   </ItemGroup>
   <Target Name="CopyToSharedLibraries" AfterTargets="AfterBuild">
     <Copy SourceFiles="$(OutputPath)\VNet.CommandLine.dll" DestinationFolder="D:\My Code\Shared Libraries\" ContinueOnError="true" />

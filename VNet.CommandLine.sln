@@ -3,20 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CEF469F6-A9AE-49E7-863C-B729510F3515}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.CommandLine", "VNet.CommandLine\VNet.CommandLine.csproj", "{B0888551-665D-4F49-86DD-12AFAB916E5C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.CommandLine.Test", "VNet.CommandLine.Test\VNet.CommandLine.Test.csproj", "{3EEA2E77-067D-4DD5-9EF6-2874EB7EE496}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.Testing", "..\VNet.Testing\VNet.Testing\VNet.Testing.csproj", "{EC945407-927B-445C-A0AD-148D8F020109}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.Utility", "..\VNet.Utility\VNet.Utility\VNet.Utility.csproj", "{FD7ADDB3-5818-42E7-B290-E34A94A822D2}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VNet.Validation", "..\VNet.Validation\VNet.Validation\VNet.Validation.csproj", "{B0B59B95-40FD-46E6-9446-26DDBABB64C0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".version", ".version", "{CECE66F7-5EE1-46D3-8BB4-9F07F11EC93A}"
+	ProjectSection(SolutionItems) = preProject
+		.version\version.json = .version\version.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,18 +26,6 @@ Global
 		{3EEA2E77-067D-4DD5-9EF6-2874EB7EE496}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EEA2E77-067D-4DD5-9EF6-2874EB7EE496}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EEA2E77-067D-4DD5-9EF6-2874EB7EE496}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC945407-927B-445C-A0AD-148D8F020109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC945407-927B-445C-A0AD-148D8F020109}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EC945407-927B-445C-A0AD-148D8F020109}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EC945407-927B-445C-A0AD-148D8F020109}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD7ADDB3-5818-42E7-B290-E34A94A822D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD7ADDB3-5818-42E7-B290-E34A94A822D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD7ADDB3-5818-42E7-B290-E34A94A822D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD7ADDB3-5818-42E7-B290-E34A94A822D2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B0B59B95-40FD-46E6-9446-26DDBABB64C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B0B59B95-40FD-46E6-9446-26DDBABB64C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B0B59B95-40FD-46E6-9446-26DDBABB64C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B0B59B95-40FD-46E6-9446-26DDBABB64C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
