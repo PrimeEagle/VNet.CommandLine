@@ -2,9 +2,29 @@
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
 		<AnalysisLevel>latest</AnalysisLevel>
-		<AssemblyVersion>1.0.0.2</AssemblyVersion>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<PackageId>VNet.CommandLine</PackageId>
+		<Authors>PrimeEagle</Authors>
+		<Product>VNet.CommandLine</Product>
+		<Description>A class library for handling command line arguments, including arguments with dependencies.</Description>
+		<PackageTags>dotnet;dotnet-core;dotnet-library;command-line;command-line-arguments;console;console-app</PackageTags>
+		<PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/PrimeEagle/VNet.CommandLine</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/PrimeEagle/VNet.CommandLine</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<TargetFramework>net8.0</TargetFramework>
+		<AssemblyName>VNet.CommandLine</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	
 	<ItemGroup>
 		<PackageReference Include="Config.Net" Version="5.1.5" />
 		<PackageReference Include="FluentValidation" Version="11.8.1" />
