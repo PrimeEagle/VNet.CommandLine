@@ -1,57 +1,50 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<AnalysisLevel>latest</AnalysisLevel>
-	</PropertyGroup>
-
-	<PropertyGroup>
-		<PackageId>VNet.CommandLine</PackageId>
-		<Authors>PrimeEagle</Authors>
-		<Product>VNet.CommandLine</Product>
-		<Description>A class library for handling command line arguments, including arguments with dependencies.</Description>
-		<PackageTags>dotnet;dotnet-core;dotnet-library;command-line;command-line-arguments;console;console-app</PackageTags>
-		<PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
-		<PackageIcon>icon.png</PackageIcon>
-		<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-		<PackageProjectUrl>https://github.com/PrimeEagle/VNet.CommandLine</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/PrimeEagle/VNet.CommandLine</RepositoryUrl>
-		<RepositoryType>git</RepositoryType>
-		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
-		<TargetFramework>net8.0</TargetFramework>
-		<AssemblyName>VNet.CommandLine</AssemblyName>
-	</PropertyGroup>
-
-	<ItemGroup>
-		<None Include="icon.png" Pack="true" PackagePath="" />
-	</ItemGroup>
-	
-	<ItemGroup>
-		<PackageReference Include="Config.Net" Version="5.1.5" />
-		<PackageReference Include="FluentValidation" Version="11.9.0" />
-		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
-		<PackageReference Include="Microsoft.CodeCoverage" Version="17.8.0" />
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
-	</ItemGroup>
-
-	<PropertyGroup Condition="'$(ServerBuild)' != ''">
-	</PropertyGroup>
-
-	<ItemGroup Condition="'$(ServerBuild)' != ''">
-		<PackageReference Include="VNet.System" Version="1.0.0" />
-		<PackageReference Include="VNet.Testing" Version="1.0.1" />
-		<PackageReference Include="VNet.Utility" Version="1.0.1" />
-		<PackageReference Include="VNet.Validation" Version="1.0.0" />
-	</ItemGroup>
-
-	<ItemGroup Condition="'$(ServerBuild)' == ''">
-		<ProjectReference Include="..\..\VNet.System\VNet.System\VNet.System.csproj" />
-		<ProjectReference Include="..\..\VNet.Testing\VNet.Testing\VNet.Testing.csproj" />
-		<ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
-		<ProjectReference Include="..\..\VNet.Validation\VNet.Validation\VNet.Validation.csproj" />
-	</ItemGroup>
-
-	<Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
-		<Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
-	</Target>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PackageId>VNet.CommandLine</PackageId>
+    <Authors>PrimeEagle</Authors>
+    <Product>VNet.CommandLine</Product>
+    <Description>A class library for handling command line arguments, including arguments with dependencies.</Description>
+    <PackageTags>dotnet;dotnet-core;dotnet-library;command-line;command-line-arguments;console;console-app</PackageTags>
+    <PackageReleaseNotes>Add NuGet metadata.</PackageReleaseNotes>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/PrimeEagle/VNet.CommandLine</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/PrimeEagle/VNet.CommandLine</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>VNet.CommandLine</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Config.Net" Version="5.1.5" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.8.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+  </ItemGroup>
+  <PropertyGroup Condition="'$(ServerBuild)' != ''">
+  </PropertyGroup>
+  <ItemGroup Condition="'$(ServerBuild)' != ''">
+    <PackageReference Include="VNet.System" Version="1.0.0" />
+    <PackageReference Include="VNet.Testing" Version="1.0.1" />
+    <PackageReference Include="VNet.Utility" Version="1.0.1" />
+    <PackageReference Include="VNet.Validation" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(ServerBuild)' == ''">
+    <ProjectReference Include="..\..\VNet.System\VNet.System\VNet.System.csproj" />
+    <ProjectReference Include="..\..\VNet.Testing\VNet.Testing\VNet.Testing.csproj" />
+    <ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
+    <ProjectReference Include="..\..\VNet.Validation\VNet.Validation\VNet.Validation.csproj" />
+  </ItemGroup>
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(ServerBuild)' == ''">
+    <Exec Command="xcopy /e /y &quot;$(TargetPath)&quot; &quot;D:\My Code\VNet bin\&quot;" />
+  </Target>
 </Project>
