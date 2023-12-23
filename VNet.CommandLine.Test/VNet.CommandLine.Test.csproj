@@ -5,22 +5,22 @@
     <AssemblyVersion>1.0.0.2</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="0.5.31" />
-    <PackageReference Include="FluentAssertions.Analyzers" Version="0.27.0">
+    <PackageReference Include="FluentAssertions" Version="FluentAssertions" />
+    <PackageReference Include="FluentAssertions.Analyzers" Version="FluentAssertions.Analyzers">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
-    <PackageReference Include="Microsoft.CodeCoverage" Version="17.8.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="1.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="1.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.0.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
-    <PackageReference Include="Moq" Version="1.1.0" />
-    <PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
-    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="FluentValidation.DependencyInjectionExtensions" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="Microsoft.CodeAnalysis.CSharp" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="Microsoft.CodeCoverage" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="Microsoft.Extensions.DependencyInjection" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="Microsoft.Extensions.Logging" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="Microsoft.Extensions.Logging.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="Microsoft.Extensions.Logging.Debug" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" Version="Moq" />
+    <PackageReference Include="MSTest.TestAdapter" Version="MSTest.TestAdapter" />
+    <PackageReference Include="MSTest.TestFramework" Version="MSTest.TestFramework" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\VNet.CommandLine\VNet.CommandLine.csproj" />
