@@ -23,20 +23,20 @@
     <None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Config.Net" Version="Config.Net" />
-    <PackageReference Include="FluentValidation" Version="FluentValidation" />
-    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="FluentValidation.DependencyInjectionExtensions" />
-    <PackageReference Include="Microsoft.CodeCoverage" Version="Microsoft.CodeCoverage" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="Microsoft.Extensions.DependencyInjection" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="Microsoft.Extensions.Logging.Console" />
+    <PackageReference Include="Config.Net" Version="5.1.5" />
+    <PackageReference Include="FluentValidation" Version="11.9.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.0" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="17.8.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
   </ItemGroup>
   <PropertyGroup Condition="'$(ServerBuild)' != ''">
   </PropertyGroup>
   <ItemGroup Condition="'$(ServerBuild)' != ''">
-    <PackageReference Include="VNet.System" Version="VNet.System" />
-    <PackageReference Include="VNet.Testing" Version="VNet.Testing" />
-    <PackageReference Include="VNet.Utility" Version="VNet.Utility" />
-    <PackageReference Include="VNet.Validation" Version="VNet.Validation" />
+    <PackageReference Include="VNet.System" Version="1.1.1" />
+    <PackageReference Include="VNet.Testing" Version="1.0.2" />
+    <PackageReference Include="VNet.Utility" Version="1.0.2" />
+    <PackageReference Include="VNet.Validation" Version="1.0.1" />
   </ItemGroup>
   <ItemGroup Condition="'$(ServerBuild)' == ''">
     <ProjectReference Include="..\..\VNet.System\VNet.System\VNet.System.csproj" />
