@@ -32,13 +32,13 @@
   </ItemGroup>
   <PropertyGroup Condition="'$(ServerBuild)' != ''">
   </PropertyGroup>
-  <ItemGroup Condition="'$(ServerBuild)' != ''">
+  <ItemGroup Condition="'$(ServerBuild)' == 'true' ">
     <PackageReference Include="VNet.System" Version="1.1.1" />
     <PackageReference Include="VNet.Testing" Version="1.0.2" />
     <PackageReference Include="VNet.Utility" Version="1.0.2" />
     <PackageReference Include="VNet.Validation" Version="1.0.1" />
   </ItemGroup>
-  <ItemGroup Condition="'$(ServerBuild)' == ''">
+  <ItemGroup Condition="'$(ServerBuild)' == 'false'  Or '$(ServerBuild)' == '' ">
     <ProjectReference Include="..\..\VNet.System\VNet.System\VNet.System.csproj" />
     <ProjectReference Include="..\..\VNet.Testing\VNet.Testing\VNet.Testing.csproj" />
     <ProjectReference Include="..\..\VNet.Utility\VNet.Utility\VNet.Utility.csproj" />
